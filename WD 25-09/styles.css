@@ -1,0 +1,36 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #003f5c;
+    text-align: center;
+    color: #ffffff;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #00c298;
+    border-radius: 10px; /* Mengganti border-radius ke 10px */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Meningkatkan bayangan */
+}
+
+input[type="text"],
+input[type="tel"]
+input[type="password"] {
+    width: 100%;
+    padding: 12px; /* Meningkatkan padding */
+    margin: 10px 0;
+    border: 2px solid #ff6b6b; /* Mengganti border menjadi warna itu */
+    border-radius: 5px; /* Mengganti border-radius ke 5px */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px; /* Meningkatkan padding */
+    background-color: #ff6b6b;
+    color: #ffffff; /* Mengganti teks menjadi itu */
+    border: none;
+    border-radius: 5px; /* Mengganti border-radius ke 5px */
+    cursor: pointer;
+    font-weight: bold; /* Membuat teks menjadi tebal */
+}

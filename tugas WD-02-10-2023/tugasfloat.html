@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('anya.jpg');
+            background-size: cover; /* Mengisi seluruh latar belakang */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif; /* Ganti font family */
+            text-align: center; /* Teks ditengah */
+        }
+        
+        .container {
+            width: 300px;
+            margin: 0 auto; /* Memposisikan container di tengah layar */
+            background-color: rgba(255, 255, 255, 0.7); /* Latar belakang semi-transparan */
+            padding: 20px;
+            border-radius:55px;
+        }
+        
+        /* Memposisikan elemen-elemen ke tengah, kiri, atau kanan dengan float */
+        .input-left {
+            float: left;
+            clear: left;
+            margin-right: 0px;
+        }
+        
+        .input-right {
+            float: right;
+            clear: right;
+            margin-left: 0px;
+        }
+        
+        /* Membersihkan float */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        /* Style tombol submit */
+        input[type="submit"] {
+            clear: both;
+            display: block;
+            margin: 20px auto; /* Memposisikan tombol ke tengah */
+            padding: 10px 50px;
+            background-color: #007bff; /* Warna latar belakang tombol */
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        
+        /* Mengatur ukuran teks untuk elemen-elemen form */
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"],
+        h2 {
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form action="#" method="post">
+            <div class="input-left">
+                <input type="text" name="first_name" placeholder="First name" required>
+                <input type="text" name="last_name" placeholder="Last name" required>
+                <input type="tel" name="phone" placeholder="Nomor HP" required>
+            </div>
+            <div class="input-right">
+                <input type="tel" name="DOB" placeholder="Date of Birth" required>
+                <input type="tel" name="Age" placeholder="Age" required>
+                <input type="text" name="Address" placeholder="Address" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Konfirmasi Password" required>
+            </div>
+            <div class="clearfix"></div> <!-- Membersihkan float setelah elemen-elemen input -->
+            <input type="submit" value="Daftar">
+        </form>
+    </div>
+</body>
+</html>
